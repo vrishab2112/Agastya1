@@ -3,6 +3,16 @@ import speech_recognition as sr
 import datetime
 import wikipedia
 import webbrowser
+import pip
+
+print("Downloading dependies..")
+
+os.system('pip install pyttsx3')
+os.system('pip install speech_recognition')
+os.system('pip install datetime')
+os.system('pip install wikipedia')
+os.system('webbrowser')
+
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
